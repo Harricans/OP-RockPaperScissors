@@ -1,0 +1,62 @@
+body {
+  font-family: monospace;
+  color: wheat;
+  background-color: rebeccapurple;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+h1 {
+  font-size: 48px;
+}
+
+button {
+  font-size: 3.3rem;
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+}
+button:hover {
+  transition: background-color 100ms ease-in;
+  background-color: orange;
+  transform: scale(1.3);
+  border-color: darkorange;
+}
+.score {
+  margin: 10px;
+  justify-content: space-around;
+  font: 1em sans-serif;
+  display: flex;
+}
+ #result{
+    color: orange;
+    font-size: 1.0rem;
+    width: auto
+ }
+.animation-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    font-size: 10rem;
+    overflow: hidden;
+}
+.animate-player{
+    animation: scaleAnimation 0.3s ease-in-out infinite;
+}
+.animate-computer{
+    animation: scaleAnimation 0.3s ease-in-out infinite; 
+}
+
+@keyframes scaleAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
